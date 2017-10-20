@@ -1,5 +1,12 @@
 var controlefecha = 0;
 	
+	
+	/*
+	    Essas funções trabalham com a transição dos botões no menu
+		e assim que um botão for apertado todos os outros sub-menus 
+		vão fechar.
+	*/
+	
 	function esconderElemento1(){
 	    		
 		document.getElementById("elemento_1").style.display = "block";
