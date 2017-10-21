@@ -8,6 +8,7 @@
 	
 	<script type="text/javascript" src="js/bancoDados.js"></script>
 	<script type="text/javascript" src="js/dados.js"></script>
+	<script type="text/javascript" src="js/operacoes.js"></script>
 	
 	
     </head>
@@ -15,6 +16,36 @@
     <body>
 	
 	    
+		<div id="botFechar" onclick="fecharJanelas()">
+		<b>X</b> 
+		</div>
+		
+		<div id="fundo" onclick="fecharJanelas()">
+		
+		</div>
+		
+		<div id="caixa">
+		
+		    <div id="cadastraProduto">
+			    <div class="legenda">Cadastrar Produto</div>
+				<br>
+			    Aqui podemos cadastrar nossos produtos
+			</div>
+
+            <div id="excluirProduto">
+			    <div class="legenda">Excluir Produto</div>
+				<br>
+			    Aqui podemos excluir nossos produtos
+			</div>
+
+            <div id="editarProduto">
+			    <div class="legenda">Editar Produto</div>
+				<br>
+			    Aqui podemos editar nossos produtos
+			</div> 			
+		
+		</div>
+		
         <div id="geral">
 		
 		    <div id="direita">
@@ -42,9 +73,10 @@
 					<p>
 				    <div id="elemento_1" class="elemento_invisivel">
 									
-					    <div href="#" class="elemento_lista">Cadastrar Produto</div><br>					
-					    <div href="#" class="elemento_lista">Excluir Produto</div><br>					
-					    <div href="#" class="elemento_lista">Editar Produto</div><br>					
+					    <div href="#" class="elemento_lista" onclick="cadastrarProduto()">Cadastrar Produto</div><br>					
+					    <div href="#" class="elemento_lista" onclick="excluirProduto()">Excluir Produto</div><br>					
+					    <div href="#" class="elemento_lista" onclick="editarProduto()">Editar Produto</div><br>					
+					   			
 					
 					</div>
 				   
@@ -56,9 +88,8 @@
 					<p>
 				    <div id="elemento_2" class="elemento_invisivel">
 									
-					    <div href="#" class="elemento_lista">Escolha 1</div><br>					
-					    <div href="#" class="elemento_lista">Escolha 2</div><br>					
-					    <div href="#" class="elemento_lista">Escolha 3</div><br>					
+					    <div href="#" class="elemento_lista">Ver Estoque</div><br>					
+					    			
 					
 					</div>
 				</div>
@@ -71,7 +102,7 @@
 									
 					    <div href="#" class="elemento_lista">Fazer venda</div><br>					
 					    <div href="#" class="elemento_lista">Ver Vendas</div><br>					
-					    <div href="#" class="elemento_lista">Ver Orçamentos</div><br>					
+					   				
 					
 					</div>
 				</div>
@@ -83,7 +114,8 @@
 				    <div id="elemento_4" class="elemento_invisivel">
 									
 					    <div href="#" class="elemento_lista">Contas a Pagar</div><br>					
-					    <div href="#" class="elemento_lista">Contas a Receber</div><br>					
+					    <div href="#" class="elemento_lista">Contas a Receber</div><br>
+                        						
 					   			
 					
 					</div>
