@@ -29,7 +29,23 @@
 		    <div id="cadastraProduto">
 			    <div class="legenda">Cadastrar Produto</div>
 				<br>
-			    Aqui podemos cadastrar nossos produtos
+				
+			    <h3>Aqui podemos cadastrar nossos produtos</h3>
+				
+				Nome do produto<br>
+				<input type="text" id="cad_nome" maxlength="20"><p>
+				
+				Preço do produto<br>
+				<input type="text" id="cad_preco" maxlength="20"><p>
+				
+				Quantidade do produto<br>
+				<input type="text" id="cad_quantidade" maxlength="20"><p>
+				
+				Fornecedor do produto<br>
+				<input type="text" id="cad_fornecedor" maxlength="20"><p>
+				
+				<button id="cad_enviar" onclick="cadastrarNovoProduto()">Cadastrar</button>
+				
 			</div>
 
             <div id="excluirProduto">
@@ -54,9 +70,19 @@
 				<p>
 				<div id="elementoTexto">
 				
-				   <script>exibeLista();</script>
+				   
+				   <div class="campos"><strong>Codigo</strong></div>
+				   <div class="campos"><strong>Nome</strong></div>
+				   <div class="campos"><strong>Preço</strong></div>
+				   <div class="campos"><strong>Quantidade</strong></div>
+				   <div class="campos"><strong>Fornecedor</strong></div>
+				   
+				   <div id="Operador"></div>
+				   
 				
 				</div>
+				
+				<div id="plus"></div>
                 
 			</div>
 			

@@ -49,3 +49,32 @@
 		document.getElementById("editarProduto").style.display = "block";		
 		
 	}
+	
+	/*
+	    Aqui nós cadastramos todos os elementos do produto de forma de 
+		ele seja exibido na tabela de estoque.
+	*/
+	function cadastrarNovoProduto(){
+		
+		 cad_id = id.length;
+	     cad_nome = document.getElementById("cad_nome").value;
+	     cad_preco = document.getElementById("cad_preco").value;
+	     cad_quantidade = document.getElementById("cad_quantidade").value;
+	     cad_fornecedor = document.getElementById("cad_fornecedor").value;
+		 
+		 id.push(cad_id); 
+         nomefluta.push(cad_nome); 
+         preco.push(cad_preco); 
+         quantidade.push(cad_quantidade); 
+         fornecedor.push(cad_fornecedor); 
+				
+		
+		var referenciaObjeto = document.getElementById('Operador');
+        var novoElemento = document.createElement(cad_nome);
+        novoElemento.innerHTML = '<div class="tabelas"><div class="campos">' + cad_id + '</div> <div class="campos">' + cad_nome + '</div> <div class="campos">' + cad_preco + '</div> <div class="campos">' + cad_quantidade + '</div> <div class="campos">' + cad_fornecedor + '</div></div>' ;
+        referenciaObjeto.parentNode.appendChild(novoElemento, referenciaObjeto.nextSibling);
+		//parentNode.insertBefore (coloca antes)
+		
+	}
+	
+	
