@@ -78,3 +78,56 @@
 	}
 	
 	
+	function CadastrarValidandoProduto(){
+	    
+		var n = false;
+		var p = false;
+		var q = false;
+		var f = false;
+		
+	    cad_nome = document.getElementById("cad_nome").value;
+	    cad_preco = document.getElementById("cad_preco").value;
+	    cad_quantidade = document.getElementById("cad_quantidade").value;
+	    cad_fornecedor = document.getElementById("cad_fornecedor").value;
+		
+		
+		if(cad_fornecedor == ""){
+		   document.getElementById("validaCadastro").innerHTML = "O campo fornecedor do produto precisa ser cadastrado!";
+		}else{
+		f = true;
+		}
+		
+		if(cad_quantidade == ""){
+		   document.getElementById("validaCadastro").innerHTML = "O campo quantidade de produto precisa ser cadastrado!";
+		}else{
+		q = true;
+		}
+		
+		if(cad_preco == ""){
+		   document.getElementById("validaCadastro").innerHTML = "O campo Preço do produto precisa ser cadastrado!";
+		}else{
+		p = true;
+		}
+		
+		if(cad_nome == ""){
+		   document.getElementById("validaCadastro").innerHTML = "O campo nome do produto precisa ser cadastrado!";
+		}else{
+		n = true;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		if((n == true) && (p == true) && (q == true) && (f == true)){
+		  cadastrarNovoProduto();
+		  document.getElementById("validaCadastro").innerHTML = "O produto foi cadastrado com sucesso!";
+		}
+	
+	}
+	
+	

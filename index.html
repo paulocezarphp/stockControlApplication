@@ -36,15 +36,17 @@
 				<input type="text" id="cad_nome" maxlength="20"><p>
 				
 				Preço do produto<br>
-				<input type="text" id="cad_preco" maxlength="20"><p>
+				<input type="text" id="cad_preco" maxlength="8"><p>
 				
 				Quantidade do produto<br>
-				<input type="text" id="cad_quantidade" maxlength="20"><p>
+				<input type="text" id="cad_quantidade" maxlength="8"><p>
 				
 				Fornecedor do produto<br>
 				<input type="text" id="cad_fornecedor" maxlength="20"><p>
 				
-				<button id="cad_enviar" onclick="cadastrarNovoProduto()">Cadastrar</button>
+				<button id="cad_enviar" onclick="CadastrarValidandoProduto()">Cadastrar</button>
+				
+				<div id="validaCadastro">...</div>
 				
 			</div>
 
